@@ -1,0 +1,120 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "create a new employee and check employee is added or not",
+        "description": "",
+        "id": "airface-verify;create-a-new-employee-and-check-employee-is-added-or-not;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5331430499,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "lunch browser",
+            "match": {
+              "location": "Addemp.lunch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2085703200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login \"kumarnayak9178@gmail.com\" and \"Bikash07@\" click admin and login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kumarnayak9178@gmail.com",
+                  "offset": 7
+                },
+                {
+                  "val": "Bikash07@",
+                  "offset": 38
+                }
+              ],
+              "location": "Addemp.login_and_click_admin_and_login_button(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7807005901,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicked toggle and employee and addEmployee button",
+            "match": {
+              "location": "Addemp.clicked_toggle_and_employee_and_addEmployee_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2129382400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the data \"IN_OD_17\" and \"nena agrawal\" and \"nenaag@gmail.com\" and \"8984564526\" and location save the employee",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IN_OD_17",
+                  "offset": 16
+                },
+                {
+                  "val": "nena agrawal",
+                  "offset": 31
+                },
+                {
+                  "val": "nenaag@gmail.com",
+                  "offset": 50
+                },
+                {
+                  "val": "8984564526",
+                  "offset": 73
+                }
+              ],
+              "location": "Addemp.enter_the_data_and_and_and_and_location_save_the_employee(String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5112859800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify employee is added or not",
+            "match": {
+              "location": "Addemp.verify_employee_is_added_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Airface verify",
+    "description": "",
+    "id": "airface-verify",
+    "keyword": "Feature",
+    "uri": "C:/Users/user/eclipse-workspace/com.BDDFramework/src/main/java/feature/new.feature"
+  }
+]

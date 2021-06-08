@@ -1,7 +1,5 @@
 package stp_def;
 
-import static org.junit.Assert.assertEquals;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,12 +23,13 @@ public class LohinPage {
 	@When("^verify log in page$")
 	public void verify_log_in_page(){
 		String title=driver.getTitle();
+		System.out.println(title);
 	}
 
-	@Then("^user enter username and password and Admin and loginButton$")
-	public void user_enter_username_and_password() {
-		driver.findElement(By.xpath("//input[@id='useremail']")).sendKeys("kumarnayak9178@gmail.com");
-		driver.findElement(By.xpath("//input[@id='userpassword']")).sendKeys("Bikash07@");
+	@Then("^user enter \"(.*)\" and \"(.*)\" and Admin and loginButton$")
+	public void user_enter_username_and_password(String username,String password) {
+		driver.findElement(By.xpath("//input[@id='useremail']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@id='userpassword']")).sendKeys(password);
 		driver.findElement(By.xpath("//div[3]//div[1]//input[1]")).click();
 		driver.findElement(By.xpath("//input[@id='submit_login']")).click();
 	}
@@ -42,6 +41,10 @@ public class LohinPage {
 		System.out.println(text);
 		Assert.assertEquals("Dashboard", text);
 	    
+	}
+	@Then("^close the browser$")
+	public void threaddown() {
+		driver.quit();
 	}
 
 }

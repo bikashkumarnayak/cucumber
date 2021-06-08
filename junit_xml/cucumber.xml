@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.466382">
+    <testcase classname="Airface verify" name="create a new employee and check employee is added or not" time="22.466382">
+        <system-out><![CDATA[Given lunch browser.........................................................passed
+When login "kumarnayak9178@gmail.com" and "Bikash07@" click admin and login button.passed
+Then clicked toggle and employee and addEmployee button.....................passed
+Then Enter the data "IN_OD_17" and "nena agrawal" and "nenaag@gmail.com" and "8984564526" and location save the employee.passed
+Then Verify employee is added or not........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
